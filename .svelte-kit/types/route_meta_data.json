@@ -1,0 +1,15 @@
+{
+	"/": [],
+	"/api/add-todo": [
+		"src/routes/api/add-todo/+server.js"
+	],
+	"/api/delete-todo": [
+		"src/routes/api/delete-todo/+server.js"
+	],
+	"/api/edit-todo": [
+		"src/routes/api/edit-todo/+server.js"
+	],
+	"/api/get-todo": [
+		"src/routes/api/get-todo/+server.js"
+	]
+}
