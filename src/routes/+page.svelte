@@ -3,7 +3,7 @@
     let title = "";
     $:console.log("Title: ",title);
     const handleAddTodoBtn = async()=>{
-        fetch("http://localhost:5173/api/add-todo", {
+        fetch("https://todo-new-eta.vercel.app/api/add-todo", {
             method:"POST",
             body:JSON.stringify({
                 title,
@@ -18,7 +18,7 @@
     }
 
     const getTodo = () => {
-    fetch("http://localhost:5173/api/get-todo")
+    fetch("https://todo-new-eta.vercel.app/api/get-todo")
       .then((res) => res.json())
       .then((data) => {
         console.log("Data: ", data);
@@ -29,7 +29,7 @@
 
 
     const handleDeleteTodoBtn = (id) => {
-    fetch("http://localhost:5173/api/delete-todo", {
+    fetch("https://todo-new-eta.vercel.app/api/delete-todo", {
       method: "POST",
       body: JSON.stringify({
         id: id,
@@ -52,7 +52,7 @@
     title = todo.title;
     };
     const haneleEditSubmitBtnClick = () => {
-    fetch("http://localhost:5173/api/edit-todo", {
+    fetch("https://todo-new-eta.vercel.app/api/edit-todo", {
       method: "POST",
       body: JSON.stringify({
         id: editTodoId,
