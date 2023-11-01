@@ -81,7 +81,7 @@
             <p class="rounded-md text-blue-900 font-bold text-center sm:text-left sm:text-lg md:text-xl lg:text-2xl sm:pt-1 pt-1 mr-3 border-2 border-sky-500">Enter your List</p>
             <input type="text" bind:value={title} class="sm:text-xs text-gray-900 rounded-lg w-[50vw] p-2 mr-3 border-2 border-sky-500" placeholder="Add Todo"/>
             {#if editTodoId.length}
-            <button type="button" class="sm:text-xs px-2 my-1 border-2 border-blue-900 rounded-md" on:click={haneleEditSubmitBtnClick}>Edit</button>
+            <button type="button" class="sm:text-xs px-2 my-1 border-2 border-blue-900 rounded-md" on:click={haneleEditSubmitBtnClick}>Done</button>
             {:else}
             <button class="sm:text-xs px-2 border-2 border-blue-900 rounded-md" on:click={handleAddTodoBtn} type="button">Save</button>
             {/if}
